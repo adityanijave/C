@@ -5,19 +5,21 @@ print number of days within the month.
 #include<stdio.h>
 
 void main(){
-    int input;
+    int ip;
     printf("enter the number of month: ");
-    scanf("%d", &input);
+    scanf("%d", &ip);
 
 
-    if ((input>=1 && input<=12) && (input == 2)) {
-        printf("28");
-    }
-    else if (((input>=1 && input<=12) && (input % 2 == 0))){
-        printf("30");
-    }
-    else if (((input>=1 && input<=12) && (input % 2 != 0))){
-        printf("31");
+    if (ip >= 1 || ip<= 12){
+        if ((ip == 1) || (ip == 3) || (ip == 5) || (ip == 7) || (ip == 8) || (ip == 10) ||(ip == 12)){
+            printf("31 days");
+        }
+        else if ( ip == 2){
+            printf("28 days");
+        }
+        else{
+            print("30 days");
+        }
     }
     else{
         printf("Invalid Month");
