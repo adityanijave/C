@@ -1,28 +1,4 @@
-// including lib's
-#include<stdio.h>
-#include<stdlib.h>
-
-// initialization user define functions
-void welCome();
-void showMenu();
-
-// main function
-void main(){
-
-    welCome();
-
-    // Asking for user's valid credentials
-    char username, password;
-    printf("\nPlease, enter your username:");
-    scanf(" %s", &username);
-    printf("nPlease, enter your password: ");
-    scanf(" %s", &password);
-
-    // Checking for user's valid credentials
-
-    if (username[] == "admin" && password[] == "admin")
-    {
-        // showing menu
+// showing menu
     showMenu();
     
     // decclearing variables
@@ -130,34 +106,3 @@ void main(){
     }
 
     goto main_code;
-    }
-    else
-    {
-        printf("\nPlease, enter valid credentials\n");
-    }
-    
-
-    
-}
-
-
-// definations of user define function
-void welCome()
-{
-    printf("\n");
-    printf("----------------->Welcome to Lena Dena Bank<-------------------");
-    printf("\n");
-    printf("\n");
-}
-
-void showMenu()
-{
-    printf("\n");
-    printf("!---------------------->MENU<----------------------!\n");
-    printf("+                D/d = Deposit  your cash            +\n");                                         //D = 68, d = 100
-    printf("+                W/w = Withdraw your cash            +\n");                                         //W = 87, w = 119
-    printf("+                S/s = Show     your balance         +\n");                                         //S = 83, s = 115
-    printf("+                E/e = Exit                          +\n");                                         //E = 69, e = 101
-    printf("!---------------------<XXX>------------------------!\n");
-    printf("\n");
-}
