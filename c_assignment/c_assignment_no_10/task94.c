@@ -11,9 +11,9 @@ void main()
     for (i = 0; string[i] != '\0'; i++)
     {
         int k;
-        for (k = i; string[k] != '\0' && string[k] != ' '; k++)
-        {printf( "%d\n", k);}
+        for (k = i; string[k] != '\0' && string[k] != ' '; k++);
         
+           
         for (int j = k - 1; i < j; i++, j--)
         {
             char temp = string[i];
